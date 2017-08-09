@@ -105,7 +105,6 @@ json_param = {
 return:
 json_string = {
 	"result": true/false,
-	"isChooseFile" : true/fase - [bool]是否选择文件了
 	"url" : "" [string]选择图片的url
 	"error_info" : [string]错误信息
 }
