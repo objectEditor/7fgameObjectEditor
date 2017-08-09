@@ -14,7 +14,20 @@ json_string = {
 			"keyName" : "xxx",
 			"keyValue" : "yyy",
 			"keyType" : "zzz",
-			"keyEnum" : "zzz"
+			"keyEnum" : "qqq"
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : "qqq"
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
 		}
 	],
 },
