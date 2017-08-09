@@ -1,0 +1,35 @@
+物编协议
+(1)获取单位表的协议
+param:
+json_param = {
+	"InterfaceID": 1,
+	"pageName": "" - [string]页面的名字
+	"unitName": "" - [string]单位的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : "zzz"
+		}
+	],
+},
+
+(2)修改单位表数据协议
+param:
+json_param = {
+	"InterfaceID": 2,
+	"unitName": "" - [string]单位的名字
+	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+
+
