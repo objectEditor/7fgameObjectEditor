@@ -141,3 +141,15 @@ json_string = {
 		}
 	],
 }
+(7)修改弹道表数据协议
+param:
+json_param = {
+	"InterfaceID": 7,
+	"InterfaceType": 2,
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
