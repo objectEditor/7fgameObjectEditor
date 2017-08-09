@@ -108,3 +108,36 @@ json_string = {
 	"url" : "" [string]选择图片的url
 	"errorInfo" : [string]错误信息
 }
+
+(6)显示弹道表数据协议
+param:
+json_param = {
+	"InterfaceID": 6,
+	"InterfaceType": 2,
+	"pojectileName": "" - [string]单位的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
