@@ -86,7 +86,7 @@ json_string = {
 (4)修改单位表现数据协议
 param:
 json_param = {
-	"InterfaceID": 2,
+	"InterfaceID": 4,
 	"InterfaceType": 1,
 	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
@@ -96,3 +96,16 @@ json_string = {
 	"result": true/false
 }
 
+(5)选择英雄头像
+param:
+json_param = {
+	"InterfaceID": 5,
+	"InterfaceType": 1,
+}
+return:
+json_string = {
+	"result": true/false,
+	"isChooseFile" : true/fase - [bool]是否选择文件了
+	"url" : "" [string]选择图片的url
+	"error_info" : [string]错误信息
+}
