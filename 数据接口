@@ -106,5 +106,5 @@ return:
 json_string = {
 	"result": true/false,
 	"url" : "" [string]选择图片的url
-	"error_info" : [string]错误信息
+	"errorInfo" : [string]错误信息
 }
