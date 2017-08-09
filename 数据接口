@@ -1,8 +1,15 @@
 物编协议
+InterfaceType : {
+	1 : 单位有关的协议,
+	2 : 弹道有关的协议,
+	3 ：技能有关的协议,
+	4 : buf有关的协议
+}
 (1)获取单位表的协议
 param:
 json_param = {
 	"InterfaceID": 1,
+	"InterfaceType": 1,
 	"unitName": "" - [string]单位的名字
 }
 return:
@@ -35,6 +42,7 @@ json_string = {
 param:
 json_param = {
 	"InterfaceID": 2,
+	"InterfaceType": 1,
 	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
 }
@@ -47,6 +55,7 @@ json_string = {
 param:
 json_param = {
 	"InterfaceID": 3,
+	"InterfaceType": 1,
 	"unitName": "" - [string]单位的名字
 }
 return:
@@ -74,5 +83,16 @@ json_string = {
 		}
 	],
 }
-
+(4)修改单位表现数据协议
+param:
+json_param = {
+	"InterfaceID": 2,
+	"InterfaceType": 1,
+	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
 
