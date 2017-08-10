@@ -156,3 +156,49 @@ return:
 json_string = {
 	"result": true/false
 }
+
+(8)显示弹道表现数据协议
+param:
+json_param = {
+	"InterfaceID": 8,
+	"InterfaceType": 2,
+	"projectileName": "" - [string]弹道的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
+(9)修改弹道表现数据协议
+param:
+json_param = {
+	"InterfaceID": 9,
+	"InterfaceType": 2,
+	"projectileName": "" - [string]弹道的名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
