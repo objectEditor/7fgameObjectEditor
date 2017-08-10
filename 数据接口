@@ -52,7 +52,7 @@ json_string = {
 	"result": true/false
 }
 
-(3)显示单位表现数据协议
+(3)显示单位表现数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 3,
@@ -98,7 +98,7 @@ json_string = {
 	"result": true/false
 }
 
-(5)选择英雄头像
+(5)选择英雄头像//ok
 param:
 json_param = {
 	"InterfaceID": 5,
@@ -111,7 +111,7 @@ json_string = {
 	"errorInfo" : [string]错误信息
 }
 
-(6)显示弹道表数据协议ok
+(6)显示弹道表数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 6,
@@ -157,7 +157,7 @@ json_string = {
 	"result": true/false
 }
 
-(8)显示弹道表现数据协议
+(8)显示弹道表现数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 8,
