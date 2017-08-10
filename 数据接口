@@ -116,7 +116,7 @@ param:
 json_param = {
 	"InterfaceID": 6,
 	"InterfaceType": 2,
-	"pojectileName": "" - [string]弹道的名字
+	"projectileName": "" - [string]弹道的名字
 }
 return:
 json_string = {
@@ -148,7 +148,7 @@ param:
 json_param = {
 	"InterfaceID": 7,
 	"InterfaceType": 2,
-	"pojectileName": "" - [string]弹道的名字
+	"projectileName": "" - [string]弹道的名字
 	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
 }
