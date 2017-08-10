@@ -5,7 +5,7 @@ InterfaceType : {
 	3 ：技能有关的协议,
 	4 : buf有关的协议
 }
-(1)获取单位表的协议
+(1)获取单位表的协议//ok
 param:
 json_param = {
 	"InterfaceID": 1,
@@ -111,7 +111,7 @@ json_string = {
 	"errorInfo" : [string]错误信息
 }
 
-(6)显示弹道表数据协议
+(6)显示弹道表数据协议ok
 param:
 json_param = {
 	"InterfaceID": 6,
