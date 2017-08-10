@@ -231,6 +231,10 @@ json_papram = {
 		{keyName:"",keyValue:true/false,keyType:"bool"},
 	]
 }
+return:
+json_string = {
+	"result": true/false
+}
 
 
 
