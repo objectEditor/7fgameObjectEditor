@@ -38,7 +38,7 @@ json_string = {
 	],
 }
 
-(2)修改单位表数据协议
+(2)修改弹道表数据协议
 param:
 json_param = {
 	"InterfaceID": 2,
