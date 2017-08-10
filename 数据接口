@@ -38,7 +38,7 @@ json_string = {
 	],
 }
 
-(2)修改单位表数据协议
+(2)修改单位表数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 2,
@@ -84,7 +84,7 @@ json_string = {
 		}
 	],
 }
-(4)修改单位表现数据协议
+(4)修改单位表现数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 4,
@@ -143,7 +143,7 @@ json_string = {
 		}
 	],
 }
-(7)修改弹道表数据协议
+(7)修改弹道表数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 7,
@@ -189,7 +189,7 @@ json_string = {
 		}
 	],
 }
-(9)修改弹道表现数据协议
+(9)修改弹道表现数据协议//待定，暂时不用
 param:
 json_param = {
 	"InterfaceID": 9,
