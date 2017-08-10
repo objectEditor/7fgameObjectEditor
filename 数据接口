@@ -3,7 +3,8 @@ InterfaceType : {
 	1 : 单位有关的协议,
 	2 : 弹道有关的协议,
 	3 ：技能有关的协议,
-	4 : buf有关的协议
+	4 : buf有关的协议,
+	5 : 特效
 }
 (1)获取单位表的协议//ok
 param:
@@ -202,3 +203,26 @@ return:
 json_string = {
 	"result": true/false
 }
+（10）
+特效编辑弹框数据的显示
+param:
+json_papram = {
+	"InterfaceID": 10,
+	"InterfaceType": 5,
+	"particleName":"", - string 特效名称
+}
+return:
+json_string = {	
+	"result":true/false,
+	"value":[
+		{keyName:"",keyValue:"",keyType:""},
+		{keyName:"",keyValue:"当前选择项",keyType:"enum",keyEnum:[str1,str2]},
+		{keyName:"",keyValue:true/false,keyType:"bool"},
+	]
+}
+
+
+
+
+
+
