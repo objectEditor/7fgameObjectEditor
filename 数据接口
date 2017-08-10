@@ -38,11 +38,12 @@ json_string = {
 	],
 }
 
-(2)修改弹道表数据协议
+(2)修改单位表数据协议
 param:
 json_param = {
 	"InterfaceID": 2,
 	"InterfaceType": 1,
+	"unitName": ""
 	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
 }
@@ -88,6 +89,7 @@ param:
 json_param = {
 	"InterfaceID": 4,
 	"InterfaceType": 1,
+	"unitName": ""
 	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
 }
@@ -114,7 +116,7 @@ param:
 json_param = {
 	"InterfaceID": 6,
 	"InterfaceType": 2,
-	"pojectileName": "" - [string]单位的名字
+	"pojectileName": "" - [string]弹道的名字
 }
 return:
 json_string = {
@@ -146,6 +148,7 @@ param:
 json_param = {
 	"InterfaceID": 7,
 	"InterfaceType": 2,
+	"pojectileName": "" - [string]弹道的名字
 	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
 }
