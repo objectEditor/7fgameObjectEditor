@@ -227,7 +227,7 @@ json_papram = {
 	"particleName":"", - string 特效名称,
 	"value":[
 		{keyName:"",keyValue:"",keyType:""},
-		{keyName:"",keyValue:"当前选择项",keyType:"enum",keyEnum:[str1,str2]},
+		{keyName:"",keyValue:"当前选择项",keyType:"enum"},
 		{keyName:"",keyValue:true/false,keyType:"bool"},
 	]
 }
