@@ -225,6 +225,7 @@ json_papram = {
 	"InterfaceID": 11,
 	"InterfaceType": 5,
 	"particleName":"", - string 特效名称,
+	"unitName" : "",
 	"value":[
 		{ 
 			"keyName": { "fatherName": ""//不是表就undefine, "TrName": "" }, 
