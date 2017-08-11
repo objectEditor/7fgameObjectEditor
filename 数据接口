@@ -227,13 +227,24 @@ json_papram = {
 	"particleName":"", - string 特效名称,
 	"value":[
 		{ 
-			keyName:"",keyValue:"" 
+			"keyName": { "fatherName": ""//不是表就undefine, "TrName": "" }, 
+			keyValue: ""
 		},
 	]
 }
 return:
 json_string = {
-	"result": true/false
+	"result": true/false,
+	"saveFaildList": [ 
+		{ 
+			"fatherName": ""//不是表就undefine, 
+			"TrName": "" 
+		}, 
+		{ 
+			"fatherName": ""//不是表就undefine, 
+			"TrName": "" 
+		}
+	]
 }
 
 
