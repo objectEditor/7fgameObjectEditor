@@ -203,7 +203,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(10)特效编辑弹框数据的显示
+(10)特效编辑弹框数据的显示//ok
 param:
 json_papram = {
 	"InterfaceID": 10,
@@ -220,7 +220,7 @@ json_string = {
 		{keyName:"",keyValue:true/false,keyType:"bool"},
 	]
 }
-(11)特效编辑弹框数据的修改
+(11)特效编辑弹框数据的修改//ok
 param:
 json_papram = {
 	"InterfaceID": 11,
