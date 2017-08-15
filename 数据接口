@@ -247,7 +247,48 @@ json_string = {
 		}
 	]
 }
-
-
-
-
+(12)获取技能表现基础数据协议
+param:
+json_param = {
+	"InterfaceID": 12,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
+(13)修改技能表现基础数据协议
+param:
+json_param = {
+	"InterfaceID": 13,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
