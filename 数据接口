@@ -333,10 +333,10 @@ json_string = {
 		}
 	],
 }
-(14)修改技能表数据协议
+(15)修改技能表数据协议
 param:
 json_param = {
-	"InterfaceID": 14,
+	"InterfaceID": 15,
 	"InterfaceType": 3,
 	"spellName": "" - [string]技能名字
 	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
