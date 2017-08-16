@@ -292,3 +292,61 @@ return:
 json_string = {
 	"result": true/false
 }
+
+(14)获取技能表数据协议
+param:
+json_param = {
+	"InterfaceID": 14,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		//普通字段
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		//表字段
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+		//拥有等级的字段，假设四个等级，那么xx = { a, b, c, d }
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ 1.0, 2.0, 3.0, 4.0, ... ],
+			"keyType" : "zzz",
+		}
+	],
+}
+(14)修改技能表数据协议
+param:
+json_param = {
+	"InterfaceID": 14,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	//两种情况：第一种情况是修改有等级的数据字段，第二种情况是修改没有等级的数据字段
+	1.
+	"value": [ a, b, c, d, ... ] - [array]修改后的值
+	2.
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
