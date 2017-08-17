@@ -352,3 +352,16 @@ return:
 json_string = {
 	"result": true/false
 }
+(16)新建表协议
+param:
+json_param = {
+	"InterfaceID": 16,
+	"InterfaceType": 6,
+	"filePath": "" [string] - 文件路径，比如：英雄\阿露露
+	"tableType": "" [string] - 文件类型 { unit、spell、projectile、buff }
+	"objectName": "" [string] - 表的名字，比如 阿露露	
+}
+return:
+json_string = {
+	"result": true/false
+}
