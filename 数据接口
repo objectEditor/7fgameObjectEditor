@@ -310,6 +310,19 @@ json_string = {
 			"keyName" : "xxx",
 			"keyValue" : "yyy",
 			"keyType" : "zzz",
+		}
+		//下拉框
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "enum",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		//多选
+		{
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "enumList",
 			"keyEnum" : [ "xx", "yy", "zz" ]
 		}
 		//表字段
@@ -323,7 +336,7 @@ json_string = {
 					"keyEnum" : [ "xx", "yy", "zz" ]
 				},
 			],
-			"keyType" : "zzz",
+			"keyType" : "table",
 			"keyEnum" : "qqq"
 		}
 		//拥有等级的字段，假设四个等级，那么xx = { a, b, c, d }
