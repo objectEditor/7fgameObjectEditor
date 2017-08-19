@@ -322,7 +322,7 @@ json_string = {
 		{
 			"keyName" : "xxx",
 			"keyValue" : "yyy",
-			"keyType" : "enumList",
+			"keyType" : "multiEnum",
 			"keyEnum" : [ "xx", "yy", "zz" ]
 		}
 		//表字段
