@@ -54,7 +54,10 @@ json_param = {
 	"InterfaceType": 1,
 	"unitName": ""
 	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
+	//1.字符串：
 	"value": "" - [string]修改后的值
+	//2.数组：(比如修改技能的时候)
+	"value": [ "", "", "" ]
 }
 return:
 json_string = {
