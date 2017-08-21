@@ -355,6 +355,7 @@ json_param = {
 	"InterfaceType": 3,
 	"spellName": "" - [string]技能名字
 	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"isLevel": true/false
 	//两种情况：第一种情况是修改有等级的数据字段，第二种情况是修改没有等级的数据字段
 	1.
 	"value": [ a, b, c, d, ... ] - [array]修改后的值
