@@ -348,7 +348,7 @@ json_string = {
 		}
 	],
 }
-(15)修改技能表数据协议
+(15)修改技能表数据协议//ok
 param:
 json_param = {
 	"InterfaceID": 15,
