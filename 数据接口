@@ -37,6 +37,13 @@ json_string = {
 			"keyType" : "zzz",
 			"keyEnum" : "qqq"
 		}
+		//特殊类型：
+		{
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "skillList", //技能列表
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
 	],
 }
 
