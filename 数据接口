@@ -389,3 +389,34 @@ return:
 json_string = {
 	"result": true/false
 }
+(17)获取技能特效数据协议
+param:
+json_param = {
+	"InterfaceID": 17,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ "", "", "" ],
+			"keyType" : "zzz",
+		}
+	],
+}
+(18)修改技能特效数据协议
+param:
+json_param = {
+	"InterfaceID": 18,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": [ "", "", "" ] - [array]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
