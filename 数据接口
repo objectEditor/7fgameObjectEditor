@@ -420,7 +420,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(19)获取技能特效数据协议
+(19)获取技能动作数据协议
 param:
 json_param = {
 	"InterfaceID": 19,
@@ -438,7 +438,7 @@ json_string = {
 		}
 	],
 }
-(20)修改技能特效数据协议
+(20)修改技能动作数据协议
 param:
 json_param = {
 	"InterfaceID": 20,
