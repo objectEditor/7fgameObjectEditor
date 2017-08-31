@@ -451,3 +451,19 @@ return:
 json_string = {
 	"result": true/false
 }
+(21)新建特效协议
+param:
+json_param = {
+	"InterfaceID": 21,
+	"InterfaceType": 5,
+	"filePath": "" [string] - 文件路径，比如：英雄\阿露露
+}
+return:
+json_string = {
+	"result":true/false,
+	"value":[
+		{keyName:"",keyValue:"",keyType:""},
+		{keyName:"",keyValue:"当前选择项",keyType:"enum",keyEnum:[str1,str2]},
+		{keyName:"",keyValue:true/false,keyType:"bool"},
+	]
+}
