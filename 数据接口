@@ -376,7 +376,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(16)新建表协议
+(16)新建表协议 //ok
 param:
 json_param = {
 	"InterfaceID": 16,
@@ -389,7 +389,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(17)获取技能特效数据协议
+(17)获取技能特效数据协议 //ok
 param:
 json_param = {
 	"InterfaceID": 17,
@@ -420,7 +420,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(19)获取技能动作数据协议
+(19)获取技能动作数据协议 //ok
 param:
 json_param = {
 	"InterfaceID": 19,
@@ -451,7 +451,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(21)新建特效协议
+(21)新建特效协议 //ok
 param:
 json_param = {
 	"InterfaceID": 21,
@@ -466,4 +466,29 @@ json_string = {
 		{keyName:"",keyValue:"当前选择项",keyType:"enum",keyEnum:[str1,str2]},
 		{keyName:"",keyValue:true/false,keyType:"bool"},
 	]
+}
+(22)修改特效名字
+param:
+json_param = {
+	"InterfaceID": 22,
+	"InterfaceType": 5,
+	"particleName": "" [string] - 特效名字
+	"modifyName": "" [string] - 修改后的特效名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(23)重命名表名字 //ok
+param:
+json_param = {
+	"InterfaceID": 23,
+	"InterfaceType": 6,
+	"tableType": "" [string] - 表类型 { unit, projectile, spell, buff }
+	"objectName": "" [string] - 表的名字
+	"modifyName": "" [string] - 修改后的表名字
+}
+return:
+json_string = {
+	"result":true/false,
 }
