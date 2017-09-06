@@ -504,7 +504,7 @@ return:
 json_string = {
 	"result":true/false,
 }
-(25)修改文件夹名字
+(25)修改文件夹名字 //ok
 param:
 json_param = {
 	"InterfaceID": 25,
