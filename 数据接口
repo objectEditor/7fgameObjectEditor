@@ -492,3 +492,15 @@ return:
 json_string = {
 	"result":true/false,
 }
+(24)新建文件夹 //ok
+param:
+json_param = {
+	"InterfaceID": 24,
+	"InterfaceType": 6,
+	"filePath": "" [string] - 创建的路径
+	"folderName": "" [string] - 文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
