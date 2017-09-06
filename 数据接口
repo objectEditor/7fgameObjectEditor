@@ -504,3 +504,16 @@ return:
 json_string = {
 	"result":true/false,
 }
+(25)修改文件夹名字
+param:
+json_param = {
+	"InterfaceID": 25,
+	"InterfaceType": 6,
+	"filePath": "" [string] - 创建的路径
+	"folderName": "" [string] - 修改前的文件夹名字
+	"modifyName": "" [string] - 修改后的文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
