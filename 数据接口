@@ -517,3 +517,77 @@ return:
 json_string = {
 	"result":true/false,
 }
+(26)动作编辑框 - 获取动作列表
+param:
+json_param = {
+	"InterfaceID": 26,
+	"InterfaceType": 5,
+	"ownerUnit": "" [string] - 所属单位名字
+}
+return:
+json_string = {
+	"result":true/false,
+	"value": [ "", "", "" ] - 动作列表	
+}
+(27)动作编辑框 - 新建动作
+param:
+json_param = {
+	"InterfaceID": 27,
+	"InterfaceType": 5,
+	"filePath": "" - [string] 所属单位的路径
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 新建动作的动作名
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(28)动作编辑框 - 修改动作名字
+param:
+json_param = {
+	"InterfaceID": 28,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 原来动作的名字
+	"modifyName" - [string] 修改后的动作名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(29)动作编辑框 - 删除动作
+param:
+json_param = {
+	"InterfaceID": 29,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 动作的名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(30)删除表 //ok
+param:
+json_param = {
+	"InterfaceID": 30,
+	"InterfaceType": 5,
+	"tableType": "" - [string] 表类型
+	"objectName" - [string] 表名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(31)删除文件夹 //ok
+param:
+json_param = {
+	"InterfaceID": 31,
+	"InterfaceType": 5,
+	"filePath": "" - [string] 文件夹路径
+	"folderName" - [string] 文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
