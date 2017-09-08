@@ -591,3 +591,29 @@ return:
 json_string = {
 	"result":true/false,
 }
+(32)动作编辑框 - 获取动作数据
+param:
+json_param = {
+	"InterfaceID": 32,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 文件夹路径
+	"animationName" - [string] 文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(33)动作编辑框 - 修改动作数据
+param:
+json_param = {
+	"InterfaceID": 33,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 文件夹路径
+	"animationName" - [string] 文件夹名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result":true/false,
+}
