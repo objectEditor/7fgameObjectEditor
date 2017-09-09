@@ -596,12 +596,20 @@ param:
 json_param = {
 	"InterfaceID": 32,
 	"InterfaceType": 5,
-	"ownerUnit": "" - [string] 文件夹路径
-	"animationName" - [string] 文件夹名字
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 动作的名字
 }
 return:
 json_string = {
-	"result":true/false,
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+	],
 }
 (33)动作编辑框 - 修改动作数据
 param:
