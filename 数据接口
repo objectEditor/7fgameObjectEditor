@@ -517,7 +517,7 @@ return:
 json_string = {
 	"result":true/false,
 }
-(26)动作编辑框 - 获取动作列表
+(26)动作编辑框 - 获取动作列表/ok
 param:
 json_param = {
 	"InterfaceID": 26,
@@ -591,7 +591,7 @@ return:
 json_string = {
 	"result":true/false,
 }
-(32)动作编辑框 - 获取动作数据
+(32)动作编辑框 - 获取动作数据//ok
 param:
 json_param = {
 	"InterfaceID": 32,
