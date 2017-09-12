@@ -529,7 +529,7 @@ json_string = {
 	"result":true/false,
 	"value": [ "", "", "" ] - 动作列表	
 }
-(27)动作编辑框 - 新建动作
+(27)动作编辑框 - 新建动作//ok
 param:
 json_param = {
 	"InterfaceID": 27,
