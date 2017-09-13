@@ -555,7 +555,7 @@ return:
 json_string = {
 	"result":true/false,
 }
-(29)动作编辑框 - 删除动作
+(29)动作编辑框 - 删除动作//ok
 param:
 json_param = {
 	"InterfaceID": 29,
