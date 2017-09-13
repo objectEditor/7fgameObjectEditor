@@ -616,8 +616,8 @@ param:
 json_param = {
 	"InterfaceID": 33,
 	"InterfaceType": 5,
-	"ownerUnit": "" - [string] 文件夹路径
-	"animationName" - [string] 文件夹名字
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 动作的动作名
 	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
 	"value": "" - [string]修改后的值
 }
