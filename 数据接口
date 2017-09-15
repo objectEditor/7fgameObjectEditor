@@ -625,3 +625,10 @@ return:
 json_string = {
 	"result":true/false,
 }
+(34)撤销操作：
+engin.off('revokeNotice',function(JSonObj){
+})
+JsonObj = {
+	'trName':value,
+	'trValue':value
+}
