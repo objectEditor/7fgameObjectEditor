@@ -641,7 +641,7 @@ JsonObj = {
 		'trValue':value,
 		oldValue:value
 	},
-	oprate:{
-		'opration':'new/delete/modify/reflash'
+	operate:{
+		'operation':'new/delete/modify/reflash'
 	}
 }
