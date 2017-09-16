@@ -634,7 +634,14 @@ json_string = {
 engin.off('revokeNotice',function(JSonObj){
 })
 JsonObj = {
-	'fatherName':value,
-	'trName':value,
-	'trValue':value
+	valueInfo:{
+		'target':obj/data
+		'fatherName':value,
+		'currentWeb':value,
+		'trName':value,
+		'trValue':value
+	},
+	oprate:{
+		'opration':'new/delete/modify'
+	}
 }
