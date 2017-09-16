@@ -636,7 +636,6 @@ engin.off('revokeNotice',function(JSonObj){
 JsonObj = {
 	valueInfo:{
 		'fatherName':value,
-		'currentWeb':value,
 		'trName':value,
 		'trValue':value,
 		oldValue:value
