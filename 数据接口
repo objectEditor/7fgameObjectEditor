@@ -641,6 +641,6 @@ JsonObj = {
 		oldValue:value
 	},
 	operate:{
-		'operation':'new/delete/modify/reflash'
+		'operation':'new/delete/modify/reflash/rename'
 	}
 }
