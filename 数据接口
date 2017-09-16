@@ -626,9 +626,15 @@ json_string = {
 	"result":true/false,
 }
 (34)撤销操作：
+撤销情况：
+改变了DOM：
+用户新添：
+用户删除：
+改变了数据：
 engin.off('revokeNotice',function(JSonObj){
 })
 JsonObj = {
+	'fatherName':value,
 	'trName':value,
 	'trValue':value
 }
