@@ -638,9 +638,10 @@ JsonObj = {
 		'fatherName':value,
 		'trName':value,
 		'trValue':value,
-		oldValue:value
+		'oldValue':value,
+		'htmlDom':value
 	},
 	operate:{
-		'operation':'new/delete/modify/reflash/rename'
+		'operation':'new/delete/modify/reflash/rename/justHtml'
 	}
 }
