@@ -625,26 +625,6 @@ return:
 json_string = {
 	"result":true/false,
 }
-(34)撤销操作：
-撤销情况：
-改变了DOM：
-用户新添：
-用户删除：
-改变了数据：
-engin.off('revokeNotice',function(JSonObj){
-})
-JsonObj = {
-	valueInfo:{
-		'fatherName':value,
-		'trName':value,
-		'trValue':value,
-		'oldValue':value,
-		'htmlDom':value
-	},
-	operate:{
-		'operation':'new/delete/modify/reflash/rename/justHtml'
-	}
-}
 物编协议
 InterfaceType : {
 	1 : 单位有关的协议,
@@ -1315,17 +1295,18 @@ json_string = {
 用户新添：
 用户删除：
 改变了数据：
-engine.on('revokeNotice',function(JSonObj){
+engin.off('revokeNotice',function(JSonObj){
 })
 JsonObj = {
 	valueInfo:{
 		'fatherName':value,
 		'trName':value,
 		'trValue':value,
-		oldValue:value
+		'oldValue':value,
+		'htmlDom':value
 	},
 	operate:{
-		'operation':'new/delete/modify/reflash/rename'
+		'operation':'new/delete/modify/reflash/rename/justHtml'
 	}
 }
 前面每个提交的协议，都会新添一个字段：htmlDom。用于保存操作dom的对象。
