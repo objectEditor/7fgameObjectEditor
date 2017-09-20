@@ -645,3 +645,686 @@ JsonObj = {
 		'operation':'new/delete/modify/reflash/rename/justHtml'
 	}
 }
+物编协议
+InterfaceType : {
+	1 : 单位有关的协议,
+	2 : 弹道有关的协议,
+	3 ：技能有关的协议,
+	4 : buf有关的协议,
+	5 : 特效、动画、音效有关的协议
+	6 : 其他协议
+	7 : 命令协议
+}
+----------------------------------------------------- 后端接口 -----------------------------------------------------------------
+(1)获取单位表的协议//ok
+param:
+json_param = {
+	"InterfaceID": 1,
+	"InterfaceType": 1,
+	"unitName": "" - [string]单位的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+		//特殊类型：
+		{
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "skillList", //技能列表
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+	],
+}
+
+(2)修改单位表数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 2,
+	"InterfaceType": 1,
+	"unitName": ""
+	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
+	//1.字符串：
+	"value": "" - [string]修改后的值
+	//2.数组：(比如修改技能的时候)
+	"value": [ "", "", "" ]
+}
+return:
+json_string = {
+	"result": true/false
+}
+
+(3)显示单位表现数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 3,
+	"InterfaceType": 1,
+	"unitName": "" - [string]单位的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
+(4)修改单位表现数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 4,
+	"InterfaceType": 1,
+	"unitName": ""
+	"key": json_string - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+
+(5)选择英雄头像//ok
+param:
+json_param = {
+	"InterfaceID": 5,
+	"InterfaceType": 1,
+}
+return:
+json_string = {
+	"result": true/false,
+	"url" : "" [string]选择图片的url
+	"errorInfo" : [string]错误信息
+}
+
+(6)显示弹道表数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 6,
+	"InterfaceType": 2,
+	"projectileName": "" - [string]弹道的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
+(7)修改弹道表数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 7,
+	"InterfaceType": 2,
+	"projectileName": "" - [string]弹道的名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+
+(8)显示弹道表现数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 8,
+	"InterfaceType": 2,
+	"projectileName": "" - [string]弹道的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
+(9)修改弹道表现数据协议//待定，暂时不用
+param:
+json_param = {
+	"InterfaceID": 9,
+	"InterfaceType": 2,
+	"projectileName": "" - [string]弹道的名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(10)特效编辑弹框数据的显示//ok
+param:
+json_papram = {
+	"InterfaceID": 10,
+	"InterfaceType": 5,
+	"particleName":"", - string 特效名称
+	"unitName" : ""
+}
+return:
+json_string = {	
+	"result":true/false,
+	"value":[
+		{keyName:"",keyValue:"",keyType:""},
+		{keyName:"",keyValue:"当前选择项",keyType:"enum",keyEnum:[str1,str2]},
+		{keyName:"",keyValue:true/false,keyType:"bool"},
+	]
+}
+(11)特效编辑弹框数据的修改//ok
+param:
+json_papram = {
+	"InterfaceID": 11,
+	"InterfaceType": 5,
+	"particleName":"", - string 特效名称,
+	"value":[
+		{ 
+			"keyName": { "fatherName": ""//不是表就undefine, "TrName": "" }, 
+			keyValue: ""
+		},
+	]
+}
+return:
+json_string = {
+	"result": true/false,
+	"saveFaildList": [ 
+		{ 
+			"fatherName": ""//不是表就undefine, 
+			"TrName": "" 
+		}, 
+		{ 
+			"fatherName": ""//不是表就undefine, 
+			"TrName": "" 
+		}
+	]
+}
+(12)获取技能表现基础数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 12,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "zzz",
+			"keyEnum" : "qqq"
+		}
+	],
+}
+(13)修改技能表现基础数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 13,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+
+(14)获取技能表数据协议
+param:
+json_param = {
+	"InterfaceID": 14,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		//普通字段
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+		}
+		//下拉框
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "enum",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		//多选
+		{
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "multiEnum",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+		//表字段
+		{
+			"keyName" : "xxx",
+			"keyValue" : [ 
+				{ 
+					"keyName" : "xxx",
+					"keyValue" : "yyy",
+					"keyType" : "zzz",
+					"keyEnum" : [ "xx", "yy", "zz" ]
+				},
+			],
+			"keyType" : "table",
+			"keyEnum" : "qqq"
+		}
+		//拥有等级的字段，假设四个等级，那么xx = { a, b, c, d }
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ 1.0, 2.0, 3.0, 4.0, ... ],
+			"keyType" : "zzz",
+			"isLevel" : true/false	
+		}
+	],
+}
+(15)修改技能表数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 15,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"isLevel": true/false
+	//两种情况：第一种情况是修改有等级的数据字段，第二种情况是修改没有等级的数据字段
+	1.
+	"value": [ a, b, c, d, ... ] - [array]修改后的值
+	2.
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(16)新建表协议 //ok
+param:
+json_param = {
+	"InterfaceID": 16,
+	"InterfaceType": 6,
+	"filePath": "" [string] - 文件路径，比如：英雄\阿露露
+	"tableType": "" [string] - 文件类型 { unit、spell、projectile、buff、animation、particle、sound }
+	"objectName": "" [string] - 表的名字，比如 阿露露	
+}
+return:
+json_string = {
+	"result": true/false
+}
+(17)获取技能特效数据协议 //ok
+param:
+json_param = {
+	"InterfaceID": 17,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ "", "", "" ],
+			"keyType" : "zzz",
+		}
+	],
+}
+(18)修改技能特效数据协议//ok
+param:
+json_param = {
+	"InterfaceID": 18,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": [ "", "", "" ] - [array]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(19)获取技能动作数据协议 //ok
+param:
+json_param = {
+	"InterfaceID": 19,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "",
+			"keyType" : "zzz",
+		}
+	],
+}
+(20)修改技能动作数据协议
+param:
+json_param = {
+	"InterfaceID": 20,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(21)新建特效协议 //ok
+param:
+json_param = {
+	"InterfaceID": 21,
+	"InterfaceType": 5,
+	"filePath": "" [string] - 文件路径，比如：英雄\阿露露
+}
+return:
+json_string = {
+	"result":true/false,
+	"value":[
+		{keyName:"",keyValue:"",keyType:""},
+		{keyName:"",keyValue:"当前选择项",keyType:"enum",keyEnum:[str1,str2]},
+		{keyName:"",keyValue:true/false,keyType:"bool"},
+	]
+}
+(22)修改特效名字
+param:
+json_param = {
+	"InterfaceID": 22,
+	"InterfaceType": 5,
+	"particleName": "" [string] - 特效名字
+	"modifyName": "" [string] - 修改后的特效名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(23)重命名表名字 //ok
+param:
+json_param = {
+	"InterfaceID": 23,
+	"InterfaceType": 6,
+	"tableType": "" [string] - 表类型 { unit, projectile, spell, buff }
+	"objectName": "" [string] - 表的名字
+	"modifyName": "" [string] - 修改后的表名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(24)新建文件夹 //ok
+param:
+json_param = {
+	"InterfaceID": 24,
+	"InterfaceType": 6,
+	"filePath": "" [string] - 创建的路径
+	"folderName": "" [string] - 文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(25)修改文件夹名字 //ok
+param:
+json_param = {
+	"InterfaceID": 25,
+	"InterfaceType": 6,
+	"filePath": "" [string] - 创建的路径
+	"folderName": "" [string] - 修改前的文件夹名字
+	"modifyName": "" [string] - 修改后的文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(26)动作编辑框 - 获取动作列表/ok
+param:
+json_param = {
+	"InterfaceID": 26,
+	"InterfaceType": 5,
+	"ownerUnit": "" [string] - 所属单位名字
+}
+return:
+json_string = {
+	"result":true/false,
+	"value": [ "", "", "" ] - 动作列表	
+}
+(27)动作编辑框 - 新建动作//ok
+param:
+json_param = {
+	"InterfaceID": 27,
+	"InterfaceType": 5,
+	"filePath": "" - [string] 所属单位的路径
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 新建动作的动作名
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(28)动作编辑框 - 修改动作名字//ok
+param:
+json_param = {
+	"InterfaceID": 28,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 原来动作的名字
+	"modifyName" - [string] 修改后的动作名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(29)动作编辑框 - 删除动作//ok
+param:
+json_param = {
+	"InterfaceID": 29,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 动作的名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(30)删除表 //ok
+param:
+json_param = {
+	"InterfaceID": 30,
+	"InterfaceType": 5,
+	"tableType": "" - [string] 表类型
+	"objectName" - [string] 表名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(31)删除文件夹 //ok
+param:
+json_param = {
+	"InterfaceID": 31,
+	"InterfaceType": 5,
+	"filePath": "" - [string] 文件夹路径
+	"folderName" - [string] 文件夹名字
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(32)动作编辑框 - 获取动作数据//ok
+param:
+json_param = {
+	"InterfaceID": 32,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 动作的名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : "yyy",
+			"keyType" : "zzz",
+			"keyEnum" : [ "xx", "yy", "zz" ]
+		}
+	],
+}
+(33)动作编辑框 - 修改动作数据//ok
+param:
+json_param = {
+	"InterfaceID": 33,
+	"InterfaceType": 5,
+	"ownerUnit": "" - [string] 所属单位名字
+	"animationName" - [string] 动作的动作名
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result":true/false,
+}
+(34 ~ 38) 空着
+
+(39)技能受击表现 - 获取受击特效
+param:
+json_param = {
+	"InterfaceID": 39,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ "", "", "" ],
+			"keyType" : "zzz",
+		}
+	]
+}
+
+(40)技能受击表现 - 修改受击特效
+param:
+json_param = {
+	"InterfaceID": 40,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": [ "", "", "" ] - [array]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+----------------------------------------------------- 前端接口 -----------------------------------------------------------------
+(1)撤销操作：
+撤销情况：
+改变了DOM：
+用户新添：
+用户删除：
+改变了数据：
+engine.on('revokeNotice',function(JSonObj){
+})
+JsonObj = {
+	valueInfo:{
+		'fatherName':value,
+		'trName':value,
+		'trValue':value,
+		oldValue:value
+	},
+	operate:{
+		'operation':'new/delete/modify/reflash/rename'
+	}
+}
