@@ -661,6 +661,18 @@ return:
 json_string = {
 	"result": true/false
 }
+（41）空数据接口
+param:
+json_param = {
+	"InterfaceID": 41,
+	"InterfaceType": 6,
+	"htmlDom": ""
+}
+return:
+json_string = {
+	"result": true/false
+}
+
 ----------------------------------------------------- 前端接口 -----------------------------------------------------------------
 (1)撤销操作：
 撤销情况：
