@@ -6,7 +6,9 @@ InterfaceType : {
 	4 : buf有关的协议,
 	5 : 特效、动画、音效有关的协议
 	6 : 其他协议
+	7 : 命令协议
 }
+----------------------------------------------------- 后端接口 -----------------------------------------------------------------
 (1)获取单位表的协议//ok
 param:
 json_param = {
@@ -625,13 +627,48 @@ return:
 json_string = {
 	"result":true/false,
 }
-(34)撤销操作：
+(34 ~ 38) 空着
+
+(39)技能受击表现 - 获取受击特效
+param:
+json_param = {
+	"InterfaceID": 39,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ "", "", "" ],
+			"keyType" : "zzz",
+		}
+	]
+}
+
+(40)技能受击表现 - 修改受击特效
+param:
+json_param = {
+	"InterfaceID": 40,
+	"InterfaceType": 3,
+	"spellName": "" - [string]技能名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": [ "", "", "" ] - [array]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+----------------------------------------------------- 前端接口 -----------------------------------------------------------------
+(1)撤销操作：
 撤销情况：
 改变了DOM：
 用户新添：
 用户删除：
 改变了数据：
-engin.off('revokeNotice',function(JSonObj){
+engine.on('revokeNotice',function(JSonObj){
 })
 JsonObj = {
 	valueInfo:{
