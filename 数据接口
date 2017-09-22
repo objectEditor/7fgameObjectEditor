@@ -409,7 +409,8 @@ json_string = {
 		}
 	],
 }
-(18)修改技能特效数据协议//ok
+(18)修改技
+协议//ok
 param:
 json_param = {
 	"InterfaceID": 18,
