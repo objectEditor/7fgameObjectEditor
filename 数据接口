@@ -692,7 +692,7 @@ JsonObj = {
 		'htmlDom':value
 	},
 	operate:{
-		'operation':'new/delete/modify/reflash/rename/justHtml'
+		'operation':'new/delete/modify/refresh/rename/justHtml'
 	}
 }
 前面每个提交的协议，都会新添一个字段：htmlDom。用于保存操作dom的对象。
