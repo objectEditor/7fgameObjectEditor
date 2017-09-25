@@ -662,7 +662,7 @@ return:
 json_string = {
 	"result": true/false
 }
-（41）空数据接口
+(41)空数据接口
 param:
 json_param = {
 	"InterfaceID": 41,
@@ -673,7 +673,150 @@ return:
 json_string = {
 	"result": true/false
 }
-
+(42)状态表 - 获取状态表数据
+param:
+json_param = {
+	"InterfaceID": 42,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [
+		{
+			"keyName" : "xxx",
+			"keyValue" : "",
+			"keyType" : "zzz",
+		},
+		{ 
+			"keyName" : "xxx",
+			"keyValue" : [ "", "", "" ],
+			"keyType" : "zzz",
+		}
+	]
+}
+(43)状态表 - 修改状态表数据
+param:
+json_param = {
+	"InterfaceID": 43,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(44)状态表现 - 获取基础数据
+param:
+json_param = {
+	"InterfaceID": 44,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [ "" ]
+}
+(45)状态表现 - 修改基础数据
+param:
+json_param = {
+	"InterfaceID": 45,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": "" - [string]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(46)状态表现 - 获取特效数据
+param:
+json_param = {
+	"InterfaceID": 46,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [ 
+		{
+			"keyName": "",
+			"keyType": "",
+			"keyValue": [ "", "", "" ],
+		}
+	]
+}
+(47)状态表现 - 修改特效数据
+param:
+json_param = {
+	"InterfaceID": 47,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": [ "", "", "" ] - [array]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
+(48)状态表现 - 获取其他数据
+param:
+json_param = {
+	"InterfaceID": 48,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+}
+return:
+json_string = {
+	"result" : trye/false,
+	"value" : [ 
+		{
+			"keyName": "",
+			"keyType": "",
+			"keyValue": "",
+		}, 
+		{
+			"keyName": "",
+			"keyType": "",
+			"keyValue": [ "", "", "" ],
+		}, 
+		{
+			"keyName": "显示子模型/隐藏子模型",
+			"keyType": "enumArray",
+			"keyValue": [ "", "", "" ],
+			"keyEnum": [ "", "", "", ""]
+		}, 
+		{
+			"keyName": "替换任意动作",
+			"keyType": "enumPairArray",
+			"keyValue": [
+				{
+					"before": "",
+					"after": ""
+				}
+			],
+		}, 
+	]
+}
+(49)状态表现 - 修改其他数据
+param:
+json_param = {
+	"InterfaceID": 49,
+	"InterfaceType": 4,
+	"buffName": "" - [string]buff名字
+	"key": json_strig - [json_string] { "fatherName": "", "TrName" : "" }
+	"value": ""/[ "", "", "" ] - [string/array]修改后的值
+}
+return:
+json_string = {
+	"result": true/false
+}
 ----------------------------------------------------- 前端接口 -----------------------------------------------------------------
 (1)撤销操作：
 撤销情况：
