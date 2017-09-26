@@ -649,7 +649,7 @@ json_string = {
 	]
 }
 
-(40)技能受击表现 - 修改受击特效
+(40)技能受击表现 - 修改受击特效//ok
 param:
 json_param = {
 	"InterfaceID": 40,
