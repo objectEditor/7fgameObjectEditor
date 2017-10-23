@@ -673,7 +673,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(42)状态表 - 获取状态表数据
+(42)状态表 - 获取状态表数据//ok
 param:
 json_param = {
 	"InterfaceID": 42,
@@ -709,7 +709,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(44)状态表现 - 获取基础数据
+(44)状态表现 - 获取基础数据//ok
 param:
 json_param = {
 	"InterfaceID": 44,
@@ -721,7 +721,7 @@ json_string = {
 	"result" : trye/false,
 	"value" : [ "" ]
 }
-(45)状态表现 - 修改基础数据
+(45)状态表现 - 修改基础数据//ok
 param:
 json_param = {
 	"InterfaceID": 45,
@@ -734,7 +734,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(46)状态表现 - 获取特效数据
+(46)状态表现 - 获取特效数据//ok
 param:
 json_param = {
 	"InterfaceID": 46,
@@ -752,7 +752,7 @@ json_string = {
 		}
 	]
 }
-(47)状态表现 - 修改特效数据
+(47)状态表现 - 修改特效数据//ok
 param:
 json_param = {
 	"InterfaceID": 47,
@@ -765,7 +765,7 @@ return:
 json_string = {
 	"result": true/false
 }
-(48)状态表现 - 获取其他数据
+(48)状态表现 - 获取其他数据//ok
 param:
 json_param = {
 	"InterfaceID": 48,
@@ -804,7 +804,7 @@ json_string = {
 		}, 
 	]
 }
-(49)状态表现 - 修改其他数据
+(49)状态表现 - 修改其他数据//ok
 param:
 json_param = {
 	"InterfaceID": 49,
