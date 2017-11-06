@@ -770,7 +770,8 @@ param:
 json_param = {
 	"InterfaceID": 48,
 	"InterfaceType": 4,
-	"buffName": "" - [string]buff名字
+	"buffName": "" - [string]buff名字,
+	"unitName":""
 }
 return:
 json_string = {
