@@ -696,7 +696,7 @@ json_string = {
 		}
 	]
 }
-(43)状态表 - 修改状态表数据
+(43)状态表 - 修改状态表数据//ok
 param:
 json_param = {
 	"InterfaceID": 43,
